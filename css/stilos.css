@@ -1,0 +1,279 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    
+    color: rgb(0,0,0);
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-image: linear-gradient(to right,
+        rgb(2, 151, 89),
+        rgb(88, 224, 156)    
+    );
+    color: white;
+}
+header .logo{
+    margin: 0;
+    padding: 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    /* text-shadow: 1px 1px 3px rgba(7, 59, 2, 0.8); */
+    text-align: center;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 33vh;
+}
+
+header p{
+    background: rgb(2, 155, 2);
+    width: 90%;
+    text-align: center;
+    margin: 10px;
+    margin-top: 0;
+    padding: 5px;
+}
+
+header a{
+
+    padding: 5px 5px;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.938);
+}
+a:hover{
+    background-color: rgb(3, 99, 16);
+    color: rgb(255, 238, 0);
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: rgb(0, 0, 0);
+}
+nav{
+    background: rgb(2, 155, 2);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .container{
+    background: rgb(240, 235, 235);
+    margin: 10px;
+    border-radius: 5px;
+    align-items: center;
+    padding: 10px;
+}
+#home h2{
+    font-size: 1em;
+    text-align: center;
+}
+#home p{
+    font-size: 0.75em;
+    text-align: center;
+}
+
+#servicios .container{
+    background: rgb(240, 235, 235);
+    margin: 10px;
+    border-radius: 5px;
+    align-items: center;
+    padding: 5px;
+}
+#servicios h2{
+    font-size: 1.25em;
+}
+.servi h3{
+    font-size: 1em;
+    text-align: center;
+}
+.servi p{
+    font-size: 0.80em;
+    text-align: center;
+}
+.carta{
+    background: white;
+    border-radius: 10px;
+    align-items: center;
+    padding: 5px;
+    margin: 10px;
+    margin-top: 0;
+    box-shadow: 2px 3px 4px rgba(121, 121, 121, 0.8);
+}
+
+#blog .container{
+    background: rgb(240, 235, 235);
+    margin: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#blog h2{
+    font-size: 1.25em;
+}
+.carta{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+.img img{
+    width: 250px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.img h3{
+    font-size: 1em;
+    text-align: center;
+    margin: 0;
+}
+.img p{
+    font-size: 0.75em;
+    text-align: center;
+}
+
+#galeria .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(240, 235, 235);
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+#galeria h3{
+    font-size: 5vw;
+    text-align:left;
+    padding: 15px;
+    margin: 0;
+    padding-bottom: 0;
+}
+#galeria img{
+    width: 250px;
+    margin: 25px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 4px rgba(121, 121, 121, 0.8);
+}
+
+#contacto .container{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    background: rgb(240, 235, 235);
+    margin: 10px;
+    border-radius: 5px;
+    padding: 25px;
+}
+#contacto h2{
+    font-size: 1.5em;
+    text-align: center;
+}
+#contacto p{
+    text-align: left;
+    margin: 5px;
+}
+
+footer {
+    background: rgb(59, 160, 59);
+}
+footer p{
+    margin: 5px;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+}
+footer .container{
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        /* position: fixed; */
+        width: 100%;
+    }
+    header .logo{
+        font-size: 1.75em;
+        padding: 5px;
+    }
+    .icon-menu{
+        display: none;
+    }
+    header .container {
+        height: 15vh;
+        justify-content: center;
+    }
+    header nav{
+        background: none;
+        gap: 5px;
+        margin-top: 0;
+    }
+    header .menu{
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+    }
+
+    #home .texto{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        text-align: left;
+        margin: 10px;
+    }
+    #home h2{
+        font-size: 1.5em;
+        padding: 0;
+        margin: 5px;
+    }
+    #home p{
+        padding: 0;
+        margin: 5px;
+    }
+    .servi{
+        display: flex;
+        grid-template-columns: repeat(3, 1fr);
+        /* flex-wrap: wrap; */
+    }
+    #servicios .carta{
+        width: 70vh;
+    }
+    .img{
+        display: flex;
+        grid-template-columns: repeat(2, 1fr);
+        /* flex-wrap: wrap; */
+    }
+    #blog .carta{
+        width: 50%;
+    }
+    #blog .carta img{
+        width: 350px;
+    }
+
+    #galeria .container{
+        display: block;
+    }
+    #galeria .container img{
+        width: 370px;
+    }
+
+    #contacto h2{
+        text-align: left;
+        margin: 10px;
+    }
+}
